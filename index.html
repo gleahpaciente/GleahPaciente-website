@@ -117,6 +117,22 @@
         .btn-primary:hover { background: #C49565; transform: translateY(-3px); box-shadow: 0 15px 40px rgba(212, 165, 116, 0.4); }
         .btn-secondary { background: white; color: var(--color-primary); border: 2px solid white; }
         .btn-secondary:hover { background: transparent; color: white; transform: translateY(-3px); }
+        /* Add this to your CSS section */
+.home-copyright {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5); /* Subtle white opacity */
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    opacity: 0; /* Start hidden */
+    animation: fadeInUp 0.8s ease 1.2s forwards; /* Fades in last */
+    z-index: 10;
+    pointer-events: none; /* Allows clicking through if needed */
+}
 
         /* MAIN CONTENT */
         #mainContent { display: none; opacity: 0; transform: translateY(50px); transition: all 0.8s ease; }
@@ -472,6 +488,10 @@
             </div>
         </div>
     </div>
+    <div class="home-copyright">
+        &copy; 2025 Glee-Yah. All Rights Reserved.
+    </div>
+</div>
 
     <nav id="mainNav">
         <div class="nav-brand">Glee-Yah</div>
